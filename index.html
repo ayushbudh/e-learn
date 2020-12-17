@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Welcome to E-learn - One stop for online learning</title>
+  <link rel="icon" href="res/graduation-hat.png" type="image/icon type">
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+  <script src="js/Form.js"></script>
+  <link rel="stylesheet" href="css/loginpage.css">
+
+  <link rel="stylesheet" href="navbar.css">
+
+</head>
+
+<body style="background-image: url('res/loginbackground.jpg');">
+  <div class="navbar" id="topnav">
+
+    <label class="logo"><img src="res/websitelogo.png" style="background: white; width: 3%; border-radius: 9px;">
+      E-learn</label>
+
+  </div>
+  <div id="main-holder">
+    <h1 id="login-header" style="font-size: 20px;"><b>Login/Signup</b></h1>
+    <img src="res/online-learning.png" width="75px">
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid Email <span id="error-msg-second-line">and/or password</span></p>
+
+    </div>
+    <div id="login-form">
+
+      <input type="email" name="username" id="email" class="login-form-field" placeholder="Email">
+      <input type="password" name="password" id="password" class="login-form-field" placeholder="Password">
+      <button OnClick="SignIn()" id="login-form-submit">Login</button>
+      <button OnClick="SignUp()" id="signUp-form-submit">Signup</button>
+
+    </div>
+  </div>
+
+  <h3 class="rights">©CopyRight Course Star. All Rights Reserved Course Star.</h3>
+</body>
+
+
+</html>
