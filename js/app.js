@@ -53,7 +53,7 @@
     .then((user) => {
         // Signed in 
         // ...
-         window.location.href = "HomePage.html";
+         window.location.href = "../html/HomePage.html";
         console.log('signed in!')
     })
     .catch((error) => {
@@ -67,7 +67,7 @@
   function signout(){
    auth.signOut().then(() => {
      console.log('signed out');
-     location.replace("SignOut.html");
+     location.replace("../html/SignOut.html");
   // Sign-out successful.
   }).catch((error) => {
     // An error happened.
@@ -86,7 +86,7 @@
     var token = credential.accessToken;
     // The signed-in user info.
     var user = result.user;
-    window.location.href = "HomePage.html";
+    window.location.href = "../html/HomePage.html";
     // ...
   }).catch((error) => {
     // Handle Errors here.
