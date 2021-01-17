@@ -5,32 +5,39 @@
   <title>Homepage</title>
 
   <link rel="icon" href="res/homepage.png" type="image/icon type">
-  <link rel="stylesheet" href="titles.css">
 
 
   <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="titles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/Form.js"></script>
+  <script src="app.js"></script>
   <script rel="stylesheet" href="js/courses.js"></script>
 
 </head>
 
 <body style="background-image: url('res/loginbackground.jpg');">
   <div class="navbar" id="topnav">
-    <a href="SignOut.html" onclick="js/SignOut(); return false;"><span class="glyphicon glyphicon-log-out"></span></a>
-    </a>
+    <!-- logout method -->
+    <a onClick="signout();" href="#" id="logout"><span class="glyphicon glyphicon-log-out"></span></a>
+
 
     <label class="logo"><img src="res/websitelogo.png" style="background: white; width: 28%; border-radius: 9px;">
       E-learn</label>
-    <a href="assignments.html">Assignments</a>
+
+    <a href="quizMaker.html">QMaker</a>
     <a href="calendar.html">Calendar</a>
-    <a href="#">Courses</a>
-    <a href="#">Home</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="HomePage.html">Courses</a>
+    <a href="HomePage.html">Home</a>
+
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 
       <i class="fa fa-bars"></i>
@@ -38,7 +45,10 @@
   </div>
 
   <div id="headinghome">
-    <h1><b>Courses</b></h1>
+    <h1 style="
+    font-size: 40px; 
+   
+    "><b>Courses</b></h1>
   </div>
 
   <div style="padding-left:16px;">

@@ -10,7 +10,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+
+  <script src="app.js"></script>
   <title>Assignments</title>
+
 
 </head>
 
@@ -20,8 +27,11 @@
     </a>
     <label class="logo"><img src="res/websitelogo.png" style="background: white; width: 28%; border-radius: 9px;">
       E-learn</label>
-    <a href="#">Assignments</a>
+
+    <a href="quizMaker.html">QMaker</a>
     <a href="calendar.html">Calendar</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="assignments.html">Assignments</a>
     <a href="HomePage.html">Courses</a>
     <a href="HomePage.html">Home</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -34,47 +44,72 @@
     <b>Assignments</b>
   </h1>
   <div id="assignments_table">
-    <table>
+    <table style="text-align: center;">
       <thead>
         <tr>
-          <th>Assignment Name</th>
-          <th>Submission</th>
-          <th>Due Date</th>
+          <td><b>Assignment Name</b></td>
+          <td><b>Submission</b></td>
+          <td><b>Due Date<b></td>
         </tr>
       </thead>
 
       <tbody>
         <tr>
           <td>Assignment 1</td>
-          <td><a href="/assign1">Not Submitted</a></td>
-          <td>30 Dec 2020</td>
+          <td>
+            <progress value="0" max="100" id="uploader1">0%s</progress>
+            <p id="a1" style="display: none;"><img
+                src="https://img.icons8.com/doodle/48/000000/checkmark.png" />Submitted</p>
+            <input type="file" id="fileInput1">
+          </td>
+          <td>21 Jan 2021</td>
         </tr>
 
         <tr>
           <td>Assignment 2</td>
-          <td><a href="/assign2">Not Submitted</a></td>
-          <td>3 Jan 2020</td>
+          <td> <progress value="0" max="100" id="uploader2">0%s</progress>
+            <p id="a2" style="display: none;"><img
+                src="https://img.icons8.com/doodle/48/000000/checkmark.png" />Submitted</p>
+            <input type="file" id="fileInput2">
+          </td>
+          <td>27 Jan 2021</td>
         </tr>
         <tr>
           <td>Assignment 3</td>
-          <td><a href="/assign1">Not Submitted</a></td>
-          <td>20 Jan 2020</td>
+          <td> <progress value="0" max="100" id="uploader3">0%s</progress>
+            <p id="a3" style="display: none;"><img
+                src="https://img.icons8.com/doodle/48/000000/checkmark.png" />Submitted</p>
+            <input type="file" id="fileInput3">
+          </td>
+          <td>1 Feb 2021</td>
         </tr>
 
         <tr>
           <td>Assignment 4</td>
-          <td><a href="/assign4">Not Submitted</a></td>
-          <td>20 Jan 2020</td>
+          <td> <progress value="0" max="100" id="uploader4">0%s</progress>
+            <p id="a4" style="display: none;"><img
+                src="https://img.icons8.com/doodle/48/000000/checkmark.png" />Submitted</p>
+            <input type="file" id="fileInput4">
+          </td>
+          <td>15 Feb 2021</td>
         </tr>
 
         <tr>
           <td>Assignment 5</td>
-          <td><a href="/assign1">Not Submitted</a></td>
-          <td>20 Jan 2020</td>
+          <td> <progress value="0" max="100" id="uploader5">0%s</progress>
+            <p id="a5" style="display: none;"><img
+                src="https://img.icons8.com/doodle/48/000000/checkmark.png" />Submitted</p>
+            <input type="file" id="fileInput5">
+          </td>
+          <td>1 Mar 2021</td>
         </tr>
         <tr>
           <td>Assignment 6</td>
-          <td><a href="/assign6">Not Submitted</a></td>
+          <td> <progress value="0" max="100" id="uploader6">0%s</progress>
+            <p id="a6" style="display: none;"><img
+                src="https://img.icons8.com/doodle/48/000000/checkmark.png" />Submitted</p>
+            <input type="file" id="fileInput6">
+          </td>
           <td>31 Jan 2020</td>
         </tr>
       </tbody>
@@ -82,7 +117,7 @@
   </div>
 
   <h3 class="rights">©CopyRight Course Star. All Rights Reserved Course Star.</h3>
-
+  <script src="assignments.js" defer></script>
 </body>
 
 </html>

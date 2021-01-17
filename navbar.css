@@ -83,40 +83,48 @@
       }
     }
 
-    #AnnouncementsPanel{
-      margin-top: 5%;
+    
+
+    #maindiv{
+      padding: 10px;
+    }
+   
+
+    #divleft{
+      background: whitesmoke;
+      padding: 40px;
+      width: 68%;
+      float: left;
       background-color: whitesmoke;
-      padding: 20px;
-      width: 50%;
       margin-bottom: 1px;
       border-radius: 20px;
-      border-top: 1px solid black;
-      border-left: 1px solid black;
-      border-right: 1px solid black;
-      margin-left: 20px;
-    }
-
-    #Announcements{
-
-      padding-left: 30px;
-      background-color: whitesmoke;
-      width: 50%;
       font-size: 30px;
-      height: 50%;
-      border-left: 1px solid black;
-      border-right: 1px solid black;
-      border-bottom: 1px solid black;
+      border: 1px solid black;
+
+    }
+
+    #divRight{
+      text-align: center;
+      background: whitesmoke;
+      border: 1px solid black;
+      padding: 20px;
+      width: 30%;
+      float: right;
       border-radius: 20px;
-      margin-left: 20px;
     }
-
-    #rightpanel{
-      background-color: whitesmoke;
-      margin-top: 40px;
-      margin-left: 100%;
+    #divRight a{
+      display: block;
+      padding: 40px 16px;
+      font-size: 25px;
+      color:black;
+      text-decoration: none;
     }
-
-
+    #divRight a:hover{
+      background-color: #5e5a51;
+      width: 100%;
+      border-radius: 20px;
+      color:white;
+    }
 
 
 
@@ -230,17 +238,4 @@ img {
   margin-top: 11%;
   background-color: white;
   text-align: center;
-}
-.button
-{
-  display: block;
-  width: 115px;
-  height: 25px;
-
-  padding: 10px;
-  text-align: center;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  line-height: 25px;
 }

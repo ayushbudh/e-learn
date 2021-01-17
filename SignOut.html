@@ -4,8 +4,11 @@
 <head>
   <title>You are logged out!</title>
   <link rel="stylesheet" href="navbar.css">
-
   <link rel="stylesheet" href="navbar.css">
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+  <script src="app.js"></script>
 </head>
 
 
@@ -19,14 +22,6 @@
 
   <p style="margin-left: 40%;">Do you want to sign in again ? <a href="index.html">Click Here</a></p>
 
-
-  <script>
-    document.getElementById("Sign-in-btn").addEventListener("click", function () {
-      window.location.href = "index.html";
-
-    });
-
-  </script>
   <h3 style="font-weight: 400;
   font-size: 13px;
   margin-top: 38%;

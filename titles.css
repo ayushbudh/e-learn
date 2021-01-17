@@ -1,10 +1,9 @@
 #headinghome{
-   
     margin-left: 8.5%; 
     font-size: 40px; 
     width: 80%;
     font-family:Arial, Helvetica, sans-serif;
-    padding: 20px;
+    padding: 10px;
     background-color: whitesmoke;
     border-radius: 50px;
     border: 1px solid black;
@@ -18,7 +17,6 @@
     width: 80%;
     padding: 20px;
     font-family:Arial, Helvetica, sans-serif;
-
     background-color: whitesmoke;
     border-radius: 50px;
     border: 1px solid black;
@@ -26,6 +24,28 @@
 }
 
 #headingcalendar{
+    margin-left: 8.5%; 
+    font-size: 40px; 
+    width: 80%;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+
+
+#headinggrades{
+    margin-left: 8.5%; 
+    font-size: 40px; 
+    width: 80%;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+#headingQuizMaker{
     margin-left: 8.5%; 
     font-size: 40px; 
     width: 80%;

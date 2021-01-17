@@ -82,10 +82,10 @@ html {
     outline: none;
     padding: 0px 0px 10px 10px;
   }
-  #login-form-submit {
+  div .btn {
     margin-top: 10px;
-    width: 90%;
-    padding: 6px;
+    width: 92%;
+    padding: 10px;
     color: white;
     font-weight: bold;
     border-radius: 5px; 
@@ -94,7 +94,7 @@ html {
     outline: none;
   }
 
-  #login-form-submit:hover{
+  div .btn:hover{
    background-color: black;
   }
 
