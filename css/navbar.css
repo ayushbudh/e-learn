@@ -83,12 +83,9 @@
       }
     }
 
-    
-
     #maindiv{
       padding: 10px;
     }
-   
 
     #divleft{
       background: whitesmoke;
@@ -235,7 +232,8 @@ img {
 .rights{
   font-weight: bolder;
   font-size: 15px;
-  margin-top: 11%;
+  margin-bottom: auto;
   background-color: white;
   text-align: center;
+  padding: 20px;
 }

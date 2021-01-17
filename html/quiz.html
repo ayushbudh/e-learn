@@ -3,22 +3,25 @@
 
 <head>
     <title>Quiz</title>
-    <link type='text/css' rel='stylesheet' href='quizstyle.css' />
+    <link rel="icon" href="../res/task.png" type="image/icon type">
+    <link type='text/css' rel='stylesheet' href='../css/quizstyle.css' />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylehseet" href="titles.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/titles.css">
+    <link rel="stylehseet" href="../css/titles.css">
 
 </head>
 
-<body style="background-image: url('res/loginbackground.jpg');">
-    <div class="navbar" id="topnav">
+<body style="background-image: url('../res/loginbackground.jpg');">
+    <div class="navbar" id="topnav" style="margin-bottom: 800px;">
         <a href="SignOut.html" onclick="js/SignOut(); return false;"><span
                 class="glyphicon glyphicon-log-out"></span></a>
         </a>
 
-        <label class="logo"><img src="res/websitelogo.png" style="background: white; width: 28%; border-radius: 9px;">
+        <label class="logo"><img src="../res/websitelogo.png"
+                style="background: white; width: 28%; border-radius: 9px;">
             E-learn</label>
 
         <a href="quizMaker.html">QMaker</a>
@@ -32,22 +35,21 @@
             <i class="fa fa-bars"></i>
 
         </a>
-
     </div>
 
     <div id='container'>
         <br>
+        <h1 style="font-size: 40px; font-weight: bold; text-align: center;"> Quiz</h1>
+        <hr>
         <div id='quiz'></div>
         <div class='button' id='next'><a href='#'>Next</a></div>
         <div class='button' id='prev'><a href='#'>Prev</a></div>
         <div class='button' id='start'> <a href='#'>Start Over</a></div>
-        <!-- <button class='' id='next'>Next</a></button>
-    		<button class='' id='prev'>Prev</a></button>
-    		<button class='' id='start'> Start Over</a></button> -->
+
     </div>
 
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-    <script src="quiz.js"></script>
+    <script src="../js/quiz.js"></script>
 </body>
 
 </html>
