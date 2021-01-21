@@ -48,8 +48,7 @@
       const txtpass = document.getElementById('password');
       const email = txtemail.value;
       const pass = txtpass.value;
-      // showing and hiding UI elements 
-     //  document.getElementById("showi").style.display = "block";
+
     auth.signInWithEmailAndPassword(email, pass)
     .then((user) => {
         // Signed in 
