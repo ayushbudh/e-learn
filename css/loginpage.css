@@ -15,8 +15,8 @@ html {
   
   #main-holder {
     width: 40%;
-    margin-top: 18%;
-    height: 100%;
+    margin-top: 12%;
+    height: 90%;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -57,13 +57,13 @@ html {
   }
   
   .login-form-field::placeholder {
-    color: #3a3a3a;
+    color: lightgray;
   }
   
   .login-form-field {
     border: 1px solid lightgray;
     width: 120%;
-  
+    border-radius:20px;
     margin-bottom: 10px;
     padding: 7px;
   }
@@ -88,7 +88,7 @@ html {
     padding: 10px;
     color: white;
     font-weight: bold;
-    border-radius: 5px; 
+    border-radius: 20px; 
     background-color: #464d47;
     cursor: pointer;
     outline: none;

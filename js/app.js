@@ -31,6 +31,7 @@
   .then((user) => {
     // Signed in 
     // ...
+    window.location.href = "../html/HomePage.html"
     console.log('created');
   })
   .catch((error) => {

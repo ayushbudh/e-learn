@@ -1,6 +1,7 @@
-var questions;
-(function() {
-    questions = [{
+// setting local storage
+if(localStorage.getItem('textValues') == null){
+  
+   var questions =[{
     question: "What is 2*5?",
     choices: [2, 5, 10, 15, 20],
     correctAnswer: 2
@@ -21,7 +22,11 @@ var questions;
     choices: [20, 30, 40, 50, 64],
     correctAnswer: 4
   }];
-  
+}else{
+    questions =  JSON.parse(localStorage.getItem('textValues')); 
+}
+
+// initilaizing sample questions
   var questionCounter = 0; //Tracks question number
   var selections = []; //Array containing user choices
   var quiz = $('#quiz'); //Quiz div object
@@ -163,23 +168,39 @@ var questions;
     
     score.append('<h1 style ="text-align:center;"><b>Grades</b></h1><hr>'+
     '<h4 style ="text-align:center;">Your score: '+ (numCorrect/questions.length) * 100 + '/100 </b></h4>');
-    // 'You got ' + numCorrect + ' questions out of ' +
-    //              questions.length + ' right!!!'
+
     return score;
   }
 
-
 // addding questions from here 
 // alter data from here
-function addquestions(){
- console.log('Added ');
-questions.push({
-    question: "What is 100*100?",
-    choices: [2, 5, 10, 15, 20],
-    correctAnswer: 2
-  });
-}
+  var que = document.getElementById('question');
+  var ans = document.getElementById('answer');
+  var choices = document.getElementById('choices');
 
-})();
+  $('#add').on('click', function (e){
+    if(que.value.length==0 || ans.value.length==0 ||choices.value.length==0){
+      alert('One or more text fields are left empty!')
+      return 0;
+    }
+   
+    var nums = choices.value.match(/\d+/g); 
+    var n = String(nums);
+    var arrString = n.split(',');
+    var arrNums = [];
+    for(let i=0; i<arrString.length; i++){
+      arrNums.push(parseInt(arrString[i]));
+    }
+    questions.push({
+    question: que.value,
+    choices: arrNums,
+    correctAnswer: parseInt(ans.value)-1
+  });
+  localStorage.setItem('textValues', JSON.stringify(questions));
+   alert('added!')
+});
+
+
+
 
 

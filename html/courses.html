@@ -10,6 +10,7 @@
     <style rel="stylesheet" href="../css/coursestyle.css"></style>
     <link href="../css/all.css" rel="stylesheet">
     <!--load all styles -->
+    <script src="../js/accesscourse.js"></script>
 
 </head>
 
@@ -34,13 +35,13 @@
     </div>
 
     <div id="maindiv">
-        <div id="divleft">
+        <div id="annocement">
             <h1 style="border-bottom: 1px solid black; padding-bottom: 10px;"> Announcements</h1>
             <h6>Date: 29 August 2020 11:29 EST By Professor D</h6>
 
             <br>
 
-            <p align="justify">
+            <p align="justify" id="content">
                 <b>Welcome Announcement to Math 1101</b>
                 <br><br>
                 Welcome to College Algebra! I am looking forward to being your instructor for the upcoming term. A few
@@ -72,14 +73,97 @@
                 Standard Deviation 8.9
 
             </p>
+             <br><br>
+              <h1 style="border-bottom: 1px solid black; padding-bottom: 10px;"> Test 2</h1>
+            <h6>Date: 20 August 2020 11:29 EST By Professor D</h6>
+
+            <br>
+             <p align="justify"id="content">
+               
+             Hello Class,
+             <br><br>
+
+Test 2 guide solutions have been posted (question # 9 has been changed).<br>
+The test will be available tomorrow from 3:30pm to 11:59pm.
+You can use scratch paper. Please write clearly and number appropriately when you write on the scratch paper for a chance to scan and uploading the scratch paper in webassign for a chance to earn partial credit on the questions you will have answered. 
+You will upload in Assignments
+You will have a limited time to upload the scratch paper - maximum 20 minutes after you finish doing the test. I will check the time. 
+Good luck!
+<br><br>
+Professor D             </p>
+        </div>
+       
+        <div id="assignment" style="display:none;">
+<h1 style="border-bottom: 1px solid black; padding-bottom: 10px;"> Project #1</h1>
+            <h6>Date: 31 August 2020 11:29 EST By Professor D</h6>
+
+            <br>
+          <p align="justify" id="content">
+            Hello Class,<br><br>
+
+A project has been posted in E-learn. To access: click assignments from the top navbar and submit.
+<br> <br>
+The project is due at 11:59 pm on 10 july 2020
+<br> <br>
+Please note:
+<br> <br>
+Whereas a correct answer is desirable, the purpose of this task is for you to show how to get the solution. It is not just about the answer. You need to show the process to get to the answer.
+<br> <br>
+You are expected to do this task on your own, with no assistance from anyone. However, you may use the textbook and may ask for assistance from your instructor should you need some clarifications.
+            </p>
+<br>
+            <h1 style="border-bottom: 1px solid black; padding-bottom: 10px;"> Assignments</h1>
+            <h6>Date: 15 August 2020 7:29 EST By Professor D</h6>
+
+            <br>
+
+            <p align="justify" id="content">
+                <b>About Assignments</b>
+                <br><br>
+                Dear students,
+<br><br>
+You should all register for WebAssign asap. You get temporary access if you like. Don't delay, you need to start doing your assignments now.
+<br><br>
+Thank you,<br><br>
+
+Professor D
+
+            </p>
+             
         </div>
 
+         <div id="quiztab" style="display:none;" >
+            <h1 style="border-bottom: 1px solid black; padding-bottom: 10px;"> Quizzes</h1>
+            <h6>Date: 29 August 2020 11:29 EST By Professor D</h6>
+
+            <br>
+
+            <p align="justify" id="content">
+                <b>About quizzes</b>
+                <br><br>
+               
+                Hello Class,<br><br>
+                I have been asked about the diagnostic quizzes in for grade. Yes, they contribute to your grade. They are important.
+<br>
+The first assignment due dates are coming soon 09/04, 09/05, 09/07, ... Try to do the assignments in time.
+<br>
+Thank you,<br><br>
+Professor D
+
+
+            </p>
+             
+        </div>
+
+
+      
         <div id="divRight">
             <h1 style="text-align: center; padding-bottom: 20px; border-bottom: 1px solid black;"> Contents </h1>
-            <a href="HomePage.html">Home</a><br>
-            <a href="assignments.html">Assignments</a><br>
-            <a href="quiz.html">Quizzes</a><br>
-            <a href="calendar.html">Calendar</a><br>
+            <button id="btnhome" onclick="gethomepage()"><a href="#">Announcements</a></button><br>
+            <button id="btnassign" onclick="getassignments()"><a href="#">Assignments</a></button><br>
+
+            <button id="btnquiz" onclick="getquiz()"><a href="#">Quizzes</a></button><br>
+            <button id="btncal" onclick="getcalendar()"><a href="#">Calendar</a></button><br>
         </div>
     </div>
 

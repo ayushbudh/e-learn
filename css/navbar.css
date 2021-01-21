@@ -87,7 +87,7 @@
       padding: 10px;
     }
 
-    #divleft{
+    #annocement{
       background: whitesmoke;
       padding: 40px;
       width: 68%;
@@ -95,9 +95,32 @@
       background-color: whitesmoke;
       margin-bottom: 1px;
       border-radius: 20px;
-      font-size: 30px;
+      font-size: 20px;
       border: 1px solid black;
 
+    }
+    #assignment{
+      background: whitesmoke;
+      padding: 40px;
+      width: 68%;
+      float: left;
+      background-color: whitesmoke;
+      margin-bottom: 1px;
+      border-radius: 20px;
+      font-size: 20px;
+      border: 1px solid black;
+    }
+
+    #quiztab{
+      background: whitesmoke;
+      padding: 40px;
+      width: 68%;
+      float: left;
+      background-color: whitesmoke;
+      margin-bottom: 1px;
+      border-radius: 20px;
+      font-size: 20px;
+      border: 1px solid black;
     }
 
     #divRight{
@@ -110,19 +133,28 @@
       border-radius: 20px;
     }
     #divRight a{
-      display: block;
-      padding: 40px 16px;
+      
+      padding: 0px 0px;
       font-size: 25px;
       color:black;
       text-decoration: none;
     }
-    #divRight a:hover{
-      background-color: #5e5a51;
-      width: 100%;
-      border-radius: 20px;
-      color:white;
+    #divRight button{
+      display: block;
+      width:100%;
+      border-radius:20px;
+      font-size: 25px;
+      padding:25px;
+      border:none;
+      background-color:whitesmoke;
+
     }
 
+     #divRight button:hover{
+       background-color:rgba(0, 0, 0, 0.411);
+       color:white;
+       
+     }
 
 
 /* Font */
@@ -232,6 +264,7 @@ img {
 .rights{
   font-weight: bolder;
   font-size: 15px;
+  width:100%;
   margin-bottom: auto;
   background-color: white;
   text-align: center;

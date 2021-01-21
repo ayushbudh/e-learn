@@ -5,6 +5,21 @@ form{
     padding: 30px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 22px;
+    font-size: 18px;
     border-radius: 20px;
+}
+
+
+#add a{
+  border: 1px solid black;
+  color:black;
+  border-radius:20px;
+  padding:10px;
+  text-decoration:none;
+}
+
+#add :hover{
+     background-color:black;
+     color:white;
+     text-decoration:none;
 }
