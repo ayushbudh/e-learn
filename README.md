@@ -4,10 +4,10 @@
 <p>E-learn website can help school and college students to access course materials provided by their respective institutions. E-lear helps to conduct quizzes, submit assignments and create event using calendar.</p>
 
 <h3>What I used?</h3>
-<ol>
+<ul>
   <li>Languages: HTML, CSS, JS and JQuery.</li>
   <li>Database: Firebase</li>
-</ol>
+</ul>
 
 <h3>For Demo Purpose use:</h3>
 <p>Email: test123@gmail.com <br> password: testinginprogress <br> OR Sign-up</p>
