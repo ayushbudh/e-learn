@@ -5,12 +5,10 @@
 
 <h3>What I used?</h3>
 <ul>
-  <li>Languages: HTML, CSS, JS and JQuery.</li>
+  <li>Languages: HTML, CSS, JS and, CSS Boostrap, JQuery.</li>
   <li>Database: Firebase</li>
 </ul>
 
-<h3>For Demo Purpose use:</h3>
-<p>Email: test123@gmail.com <br> password: testinginprogress <br> OR Sign-up</p>
 
 
-<h3>Visit Website: <a href ="https://e-learn.ayush7272.repl.co/" target="_blank" >https://e-learn.ayush7272.repl.co/</a><h3>
+<h3>Visit Website: <a href ="https://elearn-website.web.app/" target="_blank" >https://elearn-website.web.app/</a><h3>
