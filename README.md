@@ -16,7 +16,7 @@
 
 
 
-<h3>What I used?</h3>
+## What I used?
 <ul>
   <li>Languages: HTML, CSS, JS and, CSS Boostrap, JQuery.</li>
   <li>Database: Firebase</li>
