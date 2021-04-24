@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learn | Create Account</title>
+    <link rel="icon" href="../imgs/tabicon.png">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/authentication.css">
+</head>
+
+<body>
+    <nav id="mainNavbar" class="navbar py-0 fixed-top justify-content-between">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../imgs/booklogo.png" width="70" height="70" alt="">
+            E-Learn
+        </a>
+        <a class="btn btn-outline-success my-2 my-sm-0" href="../index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+            </svg></a>
+    </nav>
+    <div class="container shadow p-5 mb-0 bg-white rounded" id="createAccountContainer"
+        style=" background-color: white;margin-top: 100px;" id="maincontainer">
+        <div class="row align-items-center">
+            <div class="col-5">
+                <img src="../imgs/createaccount.png" id="dynamicimg" width="500" height="500">
+
+            </div>
+            <div class="col-7 pl-5 pr-3">
+                <h1 class="text-center display-7" style="margin-bottom: 10%;">Create Account</h1>
+                <!-- <h2 class="text-center display-7" style="margin-bottom: 12%;">Profile</h2> -->
+                <div class="profile-pic-div shadow bg-white">
+                    <img src="../imgs/profiledefault.webp " id="photo">
+                    <input type="file" id="file">
+                    <label for="file" id="uploadBtn">Choose Photo</label>
+                </div>
+
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstname">First Name</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="emailC">Email</label>
+                        <input type="email" class="form-control" id="emailC" placeholder="Email" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="passwordC">Password</label>
+                        <input type="password" class="form-control" id="passwordC" placeholder="Password" required>
+                    </div>
+                </div>
+
+
+                <div class="justify-content-evenly text-center pt-4">
+                    <form id="signupf" style="display: inline;">
+                        <button type="submit" id="create-btn" class="btn btn-outline-success">Create
+                            Account</button>
+                    </form>
+                    <form id="googleFormSignUp" style="display: inline;">
+                        <button type="submit" class="btn btn-outline-warning" style="display: inline;"> Google Signup
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-google" viewBox="0 0 16 16">
+                                <path
+                                    d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                            </svg> </button>
+                    </form>
+                    <div id="create-que" class="form-text text-center pt-2">Already have an account ? <a id="login-link"
+                            href="#">Sign in</a>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container shadow p-5 mb-0 bg-white rounded d-none" id="loginAccountContainer"
+        style=" background-color: white;margin-top: 100px;" id="maincontainer">
+        <div class="row align-items-start">
+            <div class="col-5">
+                <img src="../imgs/login1.png" id="dynamicimg" width="500" height="500">
+
+            </div>
+            <div class="col-7 pl-5 pr-3">
+                <h1 class="text-center display-7" style="margin-bottom: 20%;">Login</h1>
+
+
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="emailP">Email</label>
+                        <input type="email" class="form-control" id="emailP" placeholder="Email" required>
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="passwordP">Password</label>
+                        <input type="password" class="form-control" id="passwordP" placeholder="Password" required>
+                    </div>
+
+                </div>
+
+
+                <div class="justify-content-evenly text-center pt-4">
+                    <form id="loginf" style="display: inline;">
+                        <button type="submit" id="login-btn" class="btn btn-outline-primary ">Login</button>
+                    </form>
+
+                    <form id="googleFormSignIn" style="display: inline;">
+                        <button type="submit" class="btn btn-outline-warning" style="display: inline;"> Google Login
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-google" viewBox="0 0 16 16">
+                                <path
+                                    d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                            </svg> </button>
+                    </form>
+                    <div id="create-que" class="form-text text-center pt-2">Don't have an account? <a id="create-link"
+                            href="#">Create Account </a>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+    <script src="../js/firebaseConfig.js"></script>
+    <script src="../js/auth.js"></script>
+
+    <script>
+
+
+
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+</div>
