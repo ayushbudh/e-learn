@@ -19,7 +19,7 @@ const setupCourses = (data) => {
         const course = doc.data();
         
         const card = `
-        <div class="card">
+        <div class="card" id="courses">
             <a href="">
             <img class="card-img-top" src=${course.img} alt="Card image cap">
                 <div class="card-body">

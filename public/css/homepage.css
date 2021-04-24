@@ -41,6 +41,7 @@ body {
 
 .announcement{
     background-color: whitesmoke;
+    box-shadow: 2px 5px 10px #888888;
     padding: 20px;
     border-radius: 2%;
     margin: 20px;
@@ -49,4 +50,18 @@ body {
 .announcement #date{
     margin-bottom: 60px;
     border-bottom: 3px solid black;
+}
+
+#calendar{
+    border-radius: 2%;
+    box-shadow: 2px 5px 10px #888888;
+}
+
+#courses{
+    border-radius: 4%;
+    box-shadow: 2px 5px 10px #888888;
+}
+
+#assignment{
+    box-shadow: 2px 1px 2px #888888;
 }
