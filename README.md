@@ -1,7 +1,7 @@
 
 # E-Learn Website
 
-<h3>What it does?</h3>
+## What it does?
 <p>E-learn website can help school and college students to access course materials provided by their respective institutions. E-learn helps to conduct quizzes, submit assignments and create event using calendar.</p>
 
 ## Snapshots
