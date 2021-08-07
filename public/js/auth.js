@@ -20,29 +20,6 @@ window.onload = function() {
   }
 }
 
-// window.onload = function () {
-
-// loginLink.onclick = function (e) {
-//       heading.innerText = "Login";
-//       loginbtn.classList.remove('d-none');
-//       createbtn.classList.add('d-none');
-//       loginque.classList.add('d-none');
-//       createque.classList.remove('d-none');
-//       homeimg.src = "imgs/login1.png";
-//       return false;
-// }
-
-// createlink.onclick = function (e) {
-//       heading.innerText = "Create Account";
-//       createbtn.classList.remove('d-none');
-//       loginbtn.classList.add('d-none');
-//       loginque.classList.remove('d-none');
-//       createque.classList.add('d-none');
-//       homeimg.src = "imgs/createaccount.png";
-//       return false;
-//       }
-// }
-
 // listen for auth status changed
 auth.onAuthStateChanged(user => {
     if(user){
